@@ -10,11 +10,15 @@ import java.util.Map;
 import java.util.Scanner;
 
 public class ControllerFile {
-	
+	//variable used for read file
 	private File file;
     private FileReader fr = null;
     private BufferedReader br = null;
 	
+    /*
+	 *@author Joel Espinoza
+	 *@return mapResult map that contains data of the file readed
+	 */
 	public Map<String,Map<String,String>> obtainMap(){
 		Map<String,Map<String,String>> mapResult = new HashMap<String,Map<String,String>>();
 		try {
@@ -43,6 +47,11 @@ public class ControllerFile {
 		return mapResult; 
 	}
 	
+	/*
+	 *@author Joel Espinoza
+	 *@param statement: String  that contains day and hours workday
+	 *@return hoursResult: map that contains data of the workday of the file 
+	 */
 	private Map<String,String> obtainHours(String statement){
 		Map<String,String> hoursResult = new HashMap<String,String>();
 		String[] resultHours = statement.split(",", 6);

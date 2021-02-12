@@ -40,7 +40,12 @@ public class ControllerData {
 		this.workdays.add(new Workday("SU","18:01-00:00",25.0));
 	}
 	
-	
+	/*
+	 *@author Joel Espinoza
+	 *@param name: name of employee to calculate pay
+	 *@param data: workday map
+	 *@throws EmptyDataException: used in case  don't exists data 
+	 */
 	public void pay(String name, Map<String,String> data) throws EmptyDataException {
 		int i = 0, j = employees.size()-1;
 		if(j>0) {
@@ -74,6 +79,13 @@ public class ControllerData {
 		}
 	}
 	
+	/*
+	 *@author Joel Espinoza
+	 *@param data: workday map
+	 *@param workdaysData: workdays defined
+	 *@throws EmptyDataException: used in case  don't exists data
+	 *@return value:  
+	 */
 	private double validateWorkday(Map<String,String> data,ArrayList<Workday> workdaysData) throws EmptyDataException {
 		double value = 0.0; 
 		Iterator it = data.keySet().iterator(); 
@@ -84,6 +96,14 @@ public class ControllerData {
 		return value; 
 	}
 	
+	/*
+	 *@author Joel Espinoza
+	 *@param workdaysData: workdays defined
+	 *@param day: day of work
+	 *@param work: hours of work
+	 *@throws EmptyDataException: used in case  don't exists data
+	 *@return pay: cumulative pay of the workday
+	 */
 	private double obtainPay(ArrayList<Workday> workdaysData, String day,String work) throws EmptyDataException {
 		double pay = 0.0;
 		if(workdaysData.size()<=0) {
