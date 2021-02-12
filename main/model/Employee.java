@@ -23,10 +23,8 @@ public class Employee {
 		return salary;
 	}
 	
-	public void calculateSalary(String name, float salary) {
-		if(name == this.name) {
-			this.salary+=salary;
-		}
+	public void setSalary(double salary) {
+		this.salary+=salary;
 	}
 
 	@Override

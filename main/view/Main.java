@@ -16,7 +16,7 @@ public class Main {
 		Iterator it = input.keySet().iterator();
 		while(it.hasNext()){
 		  String key = (String) it.next();
-		  System.out.println("Clave: " + key + " -> Valor: " + input.get(key));
+		  //System.out.println("Clave: " + key + " -> Valor: " + input.get(key));
 		  dataEmployee.pay(key, input.get(key));
 		}
 	}
