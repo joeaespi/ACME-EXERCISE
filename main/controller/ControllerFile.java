@@ -11,7 +11,6 @@ import java.util.Scanner;
 
 public class ControllerFile {
 	
-	private String route;
 	private File file;
     private FileReader fr = null;
     private BufferedReader br = null;

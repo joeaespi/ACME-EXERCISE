@@ -3,7 +3,6 @@ package controller;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.Map;
-
 import exceptions.EmptyDataException;
 import model.*;
 
@@ -55,10 +54,10 @@ public class ControllerData {
 						System.out.println("The amount to pay "+name+" is: "+employeInitial.getSalary()+" USD");
 						i++;
 					}else if (employeFinal.getName().equalsIgnoreCase(name)) {
-						double value = this.validateWorkday(data, workdays);
-						employeFinal.setSalary(value);
-						System.out.println("The amount to pay "+name+" is: "+employeFinal.getSalary()+" USD");
-						j--;
+						double value = this.validateWorkday(data, workdays); 
+						employeFinal.setSalary(value); 
+						System.out.println("The amount to pay "+name+" is: "+employeFinal.getSalary()+" USD"); 
+						j--; 
 					}
 				}else {
 					if(employeInitial.getName().equalsIgnoreCase(name)) {
@@ -67,22 +66,22 @@ public class ControllerData {
 						System.out.println("The amount to pay "+name+" is: "+employeInitial.getSalary()+" USD");
 					}
 				}
-				i++;
-				j--;
+				i++; 
+				j--; 
 			}
-		}else {
-			throw new EmptyDataException("Don't exist employees register");
+		}else{
+			throw new EmptyDataException("Don't exist employees register"); 
 		}
 	}
 	
 	private double validateWorkday(Map<String,String> data,ArrayList<Workday> workdaysData) throws EmptyDataException {
-		double value = 0.0;
-		Iterator it = data.keySet().iterator();
-		while(it.hasNext()){
+		double value = 0.0; 
+		Iterator it = data.keySet().iterator(); 
+		while(it.hasNext()){ 
 		  String key = (String) it.next();
-		  value += obtainPay(workdaysData,key,data.get(key));
+		  value += obtainPay(workdaysData,key,data.get(key)); 
 		}
-		return value;
+		return value; 
 	}
 	
 	private double obtainPay(ArrayList<Workday> workdaysData, String day,String work) throws EmptyDataException {
