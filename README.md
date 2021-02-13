@@ -1,14 +1,11 @@
-# Ejecicio
+# Ejercicio
 La empresa ACME ofrece a sus empleados la flexibilidad de trabajar las horas que deseen. Pagarán las horas trabajadas con base en el día de la semana y la hora del día, según la siguiente tabla: 
 
-|Lunes - Viernes|
-|00:01 - 09:00 25 USD|
-|09:01 - 18:00 15 USD|
-|18:01 - 00:00 20 USD|
-|Sabado y Domingos|
-|00:01 - 09:00 30 USD|
-|09:01 - 18:00 20 USD|
-|18:01 - 00:00 25 USD|
+| Lunes - Viernes        | Sabado y Domingos           |
+| ------------- |:-------------:|
+| 00:01 - 09:00 25 USD      | 00:01 - 09:00 30 USD |
+| 09:01 - 18:00 15 USD     | 09:01 - 18:00 20 USD      |
+| 18:01 - 00:00 20 USD | 18:01 - 00:00 25 USD      |
 
 ## Descripción de Solución 
 ![](/image/SequenceDiagram.png)
@@ -67,9 +64,13 @@ El proyecto se desarrolló en Eclipse y una versión de Java 14, así que para p
 ```
 1.-Abrimos eclipse.
 2.- Escogemos en File -> Open Projects from File System
-![](/image/eclipse_opt.png)
-3.- Escogemos “Directory” y buscamos la carpeta que contiene nuestro proyecto escoge la carpeta del proyecto en cuadro emergente y le damos finish.
-![](/image/eclipse_emg.png)
-4.- Finalmente podemos revisar a fondo el proyecto
-![](/image/eclipse_view.png)
 ```
+![](/image/eclipse_opt.png)
+```
+3.- Escogemos “Directory” y buscamos la carpeta que contiene nuestro proyecto escoge la carpeta del proyecto en cuadro emergente y le damos finish.
+```
+![](/image/eclipse_emg.png)
+```
+4.- Finalmente podemos revisar a fondo el proyecto
+```
+![](/image/eclipse_view.png)
