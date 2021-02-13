@@ -11,11 +11,11 @@ La empresa ACME ofrece a sus empleados la flexibilidad de trabajar las horas que
 |18:01 - 00:00 25 USD|
 
 ## Descripción de Solución 
-(/image/SequenceDiagram.png)
+![](/image/SequenceDiagram.png)
 Al necesitar saber el salario en base a las horas de los empleados en la empresa ACME, se busco realizar un programa en java en el cual el usuario de la empresa pueda escoger la opción para calcular el pago de los empleados registrados, el cual se hace por medio de un archivo el cual el sistema de encarga de leerlo internamente y devolvernos lo pagos de sus empleados acorde a sus jornadas de trabajos.
 
 ## Explicación de arquitectura 
-(/image/ClassDiagram.png)
+![](/image/ClassDiagram.png)
 Se decidió usar una estructura MVC la cual nos permite separar en paquetes los cuales son:
 ###Modelo
 Que se encarga de contener la clase empleados y días laborales y poder usarlo para registrarlos.
@@ -60,14 +60,16 @@ Una vez clonado el repositorio podemos tendremos un archivo .jar con el cual pod
 Dentro de la carpeta del proyecto, abrimos una consola CMD y ejecutamos le siguiente comando
 java -jar ACMEv1.jar 
 Al ejecutar el comando podremos interactuar con el sistema.
-(/image/cmd.png)
+![](/image/cmd.png)
 
 ### Para Abrir el proyecto
-El proyecto se desarrolló en Eclipse y una versión de Java 14, así que para poder abrirlo necesitaremos IDE de Eclipse
+El proyecto se desarrolló en Eclipse y una versión de Java 14, así que para poder abrirlo necesitaremos IDE de Eclipse.
+```
 1.-Abrimos eclipse.
 2.- Escogemos en File -> Open Projects from File System
-(/image/eclipse_opt.png)
+![](/image/eclipse_opt.png)
 3.- Escogemos “Directory” y buscamos la carpeta que contiene nuestro proyecto escoge la carpeta del proyecto en cuadro emergente y le damos finish.
-(/image/eclipse_emg.png)
+![](/image/eclipse_emg.png)
 4.- Finalmente podemos revisar a fondo el proyecto
-(/image/eclipse_view.png)
+![](/image/eclipse_view.png)
+```
