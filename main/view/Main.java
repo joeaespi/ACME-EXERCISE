@@ -41,7 +41,7 @@ public class Main {
         		data=false;
         	}
         }
-		
+		System.exit(0);
 		  
 		}
 	}
