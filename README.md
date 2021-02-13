@@ -91,7 +91,7 @@ The company ACME offers their employees the flexibility to work the hours they w
 
 ## Description of solution
 ![](/image/SequenceDiagram.png)
-Al querer determinar el salario en base a las horas de los empleados en la empresa ACME, When wanting to determine the salary in base of the employees hours in the ACME Company, It was sought to make a program in java  in which the user of the company can obtain the total to pay of the registered employees based on the days worked by reading a file which will contain the name and the days worked and based on that and making use of arrangements and maps to be able to show the amount to pay of the employees within the file. 
+When wanting to determine the salary in base of the employees hours in the ACME Company, It was sought to make a program in java  in which the user of the company can obtain the total to pay of the registered employees based on the days worked by reading a file which will contain the name and the days worked and based on that and making use of arrangements and maps to be able to show the amount to pay of the employees within the file. 
 ## Explanation of architecture
 ![](/image/ClassDiagram.png)
 It was decided use a architecture MVC which allow us split the different package for functionality our project:
